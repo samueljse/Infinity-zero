@@ -18,12 +18,34 @@ header {
     padding: 20px;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .card {
     background: #1e293b;
-    margin: 20px;
-    padding: 20px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+img {
+    width: 100%;
     border-radius: 10px;
 }
+
+button {
+    background: #38bdf8;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 </style>
 </head>
 
@@ -31,18 +53,39 @@ header {
 
 <header>
 <h1>🔥 Infinity Zero</h1>
-<p>Servicios de Roblox</p>
+<p>Tienda de Blox Fruits</p>
 </header>
 
+<div class="container">
+
 <div class="card">
-<h2>Blox Fruits</h2>
-<p>Subida de nivel</p>
+<img src="https://via.placeholder.com/250x150?text=Fruta+Dragon">
+<h3>Fruta Dragón</h3>
+<p>R$20</p>
+<button onclick="comprar('Fruta Dragón')">Comprar</button>
 </div>
 
 <div class="card">
-<h2>Cuentas</h2>
-<p>Venta de cuentas</p>
+<img src="https://via.placeholder.com/250x150?text=Espada+Legendaria">
+<h3>Espada Legendaria</h3>
+<p>R$15</p>
+<button onclick="comprar('Espada Legendaria')">Comprar</button>
 </div>
+
+<div class="card">
+<img src="https://via.placeholder.com/250x150?text=Estilo+de+Pelea">
+<h3>Estilo de pelea</h3>
+<p>R$10</p>
+<button onclick="comprar('Estilo de pelea')">Comprar</button>
+</div>
+
+</div>
+
+<script>
+function comprar(producto) {
+    alert("Quieres comprar: " + producto);
+}
+</script>
 
 </body>
 </html>
